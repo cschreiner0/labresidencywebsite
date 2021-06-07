@@ -1,0 +1,63 @@
+/* Tyana, these are the elements I have created for the HOME page:
+• .card (div class)- for the News and Events cards
+• .caption (p class) - for the card descriptions and for the image captions
+• <h5> - for the section "paragraphs"
+• <a> - for the links that lead to other pages (outside the nav bar)
+• <button> - for the buttons on the home page
+
+Thank you for all your hard work as you are doing amazing!
+*/
+
+body {
+  background: ##ffffff;
+}
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 177px;
+  height: 35px;
+
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+nav a:link,
+nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0.5em;
+  transition: background 1s;
+}
+
+nav a:hover,
+nav a:active {
+  color: #df97a6;
+}
+
+div {
+  position: absolute;
+  width: 1440px;
+  height: 220px;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(
+    180deg,
+    #2d2d2d 0%,
+    #2d2d2d 0.01%,
+    rgba(45, 45, 45, 0.64) 46.56%,
+    rgba(45, 45, 45, 0) 100%
+  );
+}
