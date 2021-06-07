@@ -8,6 +8,11 @@
 Thank you for all your hard work as you are doing amazing!
 */
 
+/* This is temporary as I do not know why it is up in the nav bar*/
+.card {
+  z-index: -1;
+}
+
 body {
   background: ##ffffff;
 }
