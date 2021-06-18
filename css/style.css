@@ -102,7 +102,6 @@ h5 {
 }
 
 .card1 {
-  position: absolute;
   width: 458px;
   height: 466px;
   left: 206px;
@@ -112,9 +111,9 @@ h5 {
   border: 1px solid #656565;
   box-sizing: border-box;
   border-radius: 8px;
+  margin-bottom: 10px;
 }
 .card1 img {
-  position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
@@ -128,7 +127,6 @@ h5 {
 }
 
 .card1 a {
-  position: absolute;
   left: 3.74%;
   right: 3.74%;
   top: 48.82%;
@@ -150,7 +148,6 @@ h5 {
 }
 
 .card1 .description {
-  position: absolute;
   left: 3.74%;
   right: 3.74%;
   top: 58.48%;
@@ -167,7 +164,6 @@ h5 {
 }
 
 .card2 {
-  position: absolute;
   width: 458px;
   height: 466px;
   left: 793px;
@@ -177,10 +173,10 @@ h5 {
   border: 1px solid #656565;
   box-sizing: border-box;
   border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .card2 img {
-  position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
@@ -194,7 +190,6 @@ h5 {
 }
 
 .card2 a {
-  position: absolute;
   left: 3.74%;
   right: 3.74%;
   top: 48.82%;
@@ -216,7 +211,6 @@ h5 {
 }
 
 .card2 .description {
-  position: absolute;
   left: 3.74%;
   right: 3.74%;
   top: 58.48%;
@@ -233,7 +227,6 @@ h5 {
 }
 
 .card2 pre {
-  position: absolute;
   left: 3.74%;
   right: 3.74%;
   top: 58.48%;
@@ -250,7 +243,6 @@ h5 {
 }
 
 .card3 {
-  position: absolute;
   width: 458px;
   height: 468px;
   left: 793px;
