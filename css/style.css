@@ -8,36 +8,43 @@
 Thank you for all your hard work as you are doing amazing!
 */
 
+/* Body, Main, Section */
 body {
-  background: ##ffffff;
+  background: #ffffff;
 }
 
+main {
+  padding: 10em 4em 4em 4em;
+}
+
+section {
+  padding: 0em 0em 5em 0em;
+}
+
+/* Nav */
 nav {
-  margin: 0 auto;
+  color: #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  width: 177px;
+  text-align: center;
+  width: 100%;
   height: 35px;
 
   font-family: Jost;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 35px;
+  /* line-height: 35px; */
   /* identical to box height */
-  text-align: center;
-
-  color: #ffffff;
 }
 
 nav a:link,
 nav a:visited {
   color: #ffffff;
   text-decoration: none;
-  padding: 0.5em;
   margin: 0.5em;
+  padding: 0.5em;
   transition: background 1s;
 }
 
@@ -46,12 +53,13 @@ nav a:active {
   color: #df97a6;
 }
 
-nav > div {
+.nav {
   position: absolute;
-  width: 1440px;
+  /* width: 1440px; */
   height: 220px;
-  left: 0px;
   top: 0px;
+  right: 0px;
+  left: 0px;
 
   background: linear-gradient(
     180deg,
@@ -62,194 +70,291 @@ nav > div {
   );
 }
 
-main {
-  margin-top: 220px;
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
 }
 
+/* .carousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 35px;
+}
+
+#myCarousel {
+  position: absolute;
+  width: 1015px;
+  height: 476px;
+  left: 214px;
+  top: 382px;
+}
+
+.carousel-item img {
+  width: 1015px;
+  height: 476px;
+} */
+
+/* Headings */
 h1 {
+  color: #000000;
+
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 600;
   font-size: 76px;
   line-height: 93px;
   text-align: center;
+}
 
-  color: #000000;
+h2 {
+  color: #2d2d2d;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 150%;
+  /* or 60px */
+}
+
+h3 {
+  color: #2d2d2d;
+
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+}
+
+h4 {
+  color: #2d2d2d;
+
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
 }
 
 h5 {
+  color: #2d2d2d;
+
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
   text-align: center;
-
-  /* Grey dark */
-  color: #2d2d2d;
 }
 
-.carousel {
+h6 {
+  color: #000000;
+
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+p {
+  color: #000000;
+
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* Learn More */
+.more {
+  color: #000000;
   position: absolute;
-  width: 1015px;
-  height: 476px;
-  left: 214px;
-  top: 382px;
+  right: 2.1em;
 
-  background: url(ScreenShot2021-05-09at3.18.30PM.png), url(unnamed.jpg);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 5px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 43px;
+  text-decoration-line: underline;
 }
 
-.card1 {
-  width: 458px;
-  height: 466px;
-  left: 206px;
-  top: 1559px;
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-  /* Grey med */
+.card {
+  width: 454px;
+  height: 466px;
+  /* left: 206px;
+  top: 1559px; */
   border: 1px solid #656565;
   box-sizing: border-box;
   border-radius: 8px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
-.card1 img {
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 55.46%;
 
+.card img {
   background: url(ScreenShot2021-06-01at11.33.47AM.png);
-  /* Grey med */
   border: 1px solid #656565;
   box-sizing: border-box;
   border-radius: 8px 8px 0px 0px;
 }
 
-.card1 a {
-  left: 3.74%;
-  right: 3.74%;
-  top: 48.82%;
-  bottom: 46.89%;
+.card a {
+  color: #9c6a74;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  padding: 20px 20px 0px 20px;
 
-  /* Card Title */
   font-family: Jost;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   /* identical to box height, or 111% */
-  display: flex;
-  align-items: center;
-  text-decoration-line: underline;
-
-  /* Pink dark */
-  color: #9c6a74;
 }
 
-.card1 .description {
-  left: 3.74%;
-  right: 3.74%;
-  top: 58.48%;
-  bottom: 1.77%;
+.card .description {
+  color: #000000;
+  padding: 10px 20px 0px 20px;
 
-  /* Captions For Images */
   font-family: Jost;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+}
 
+.card pre {
   color: #000000;
+  padding: 10px 20px 0px 20px;
+
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .card2 {
-  width: 458px;
-  height: 466px;
+  width: 450px;
+  height: 460px;
   left: 793px;
   top: 1559px;
 
-  /* Grey med */
   border: 1px solid #656565;
   box-sizing: border-box;
   border-radius: 8px;
-  margin-bottom: 10px;
 }
 
-.card2 img {
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 55.46%;
-
-  background: url(ScreenShot2021-06-01at11.29.15AM.png);
-  /* Grey med */
-  border: 1px solid #656565;
-  box-sizing: border-box;
-  border-radius: 8px 8px 0px 0px;
-}
-
-.card2 a {
-  left: 3.74%;
-  right: 3.74%;
-  top: 48.82%;
-  bottom: 46.89%;
-
-  /* Card Title */
-  font-family: Jost;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  /* identical to box height, or 111% */
+.donors {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  text-decoration-line: underline;
+}
 
-  /* Pink dark */
+.donors figure {
+  width: 200px;
+}
+
+.donors h4 {
   color: #9c6a74;
 }
 
-.card2 .description {
-  left: 3.74%;
-  right: 3.74%;
-  top: 58.48%;
-  bottom: 1.77%;
-
-  /* Captions For Images */
-  font-family: Jost;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-
-  color: #000000;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card2 pre {
-  left: 3.74%;
-  right: 3.74%;
-  top: 58.48%;
-  bottom: 1.77%;
-
-  /* Captions For Images */
-  font-family: Jost;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-
-  color: #000000;
-}
-
-.card3 {
-  width: 458px;
-  height: 468px;
-  left: 793px;
-  top: 1559px;
-
-  /* Grey med */
-  border: 1px solid #656565;
+button {
+  color: #9c6a74;
+  background: #ffffff;
+  width: 352px;
+  height: 85px;
+  border: 1px solid #2d2d2d;
   box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 39px;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+}
+
+footer {
+  background: #2d2d2d;
+  width: 100%;
+  display: flex;
+  vertical-align: top;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+footer figure {
+  margin: 0px 10px 10px 10px;
+}
+
+footer figure a {
+  color: #bcbcbc;
+
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer a:link,
+footer a:visited {
+  color: #bcbcbc;
+  text-decoration: none;
+  transition: background 1s;
+}
+
+footer a:hover,
+footer a:active {
+  color: #df97a6;
+}
+
+/* figure {
+  background: white;
+} */
+
+footer h6 {
+  color: #df97a6;
+}
+
+.lab {
+  width: 150px;
+  height: 200px;
+}
+
+.about {
+  width: 170px;
+  height: 200px;
+}
+
+.contact {
+  width: 370px;
+  height: 200px;
 }
